@@ -1,83 +1,74 @@
-html, body, figure, figcaption, ul, li, h1 {
-  margin: 0;
+/*RESET */
+
+html, body, h1, figure, ul, li {
   padding: 0;
+  margin: 0;
   border: 0;
-  font: inherit;
+
+  color: inherit;
   text-align: inherit;
+  text-decoration: inherit;
+  font-family: inherit;
+
+  background: transparent;
 }
 
 ul {
   list-style: none;
 }
 
-.group:after {
+.group {
   content: "";
   clear: both;
   display: block;
 }
 
 body {
-  font-family: sans-serif;
+  margin: auto;
   text-align: center;
-  font-weight: bold;
 }
 
-h1 {
-  font-size: 60px;
-  margin: 30px;
-}
+h1 {}
 
 .hanoi {
-  margin: 30px auto;
-  width: 600px;
+  margin: auto;
+  width: 1000px;
+  height: 300px;
+  background: red;
 }
 
-ul {
+.hanoi > ul {
+  width: 300px;
+  height: 200px;
   float: left;
-  width: 180px;
-  padding: 0 0 10px 0;
-  border-bottom: 10px solid black;
-  cursor: pointer;
-}
-
-ul:hover {
-  border-color: blue;
-}
-
-ul.selected {
-  border-color: red;
-}
-
-ul:nth-child(2) {
-  margin: 0 20px;
-}
-
-li {
-  width: 0px;
-  margin: 10px auto;
-  height: 50px;
-  background: gray;
-  border-radius: 25px;
-}
-
-li.disk-1 {
-  width: 60px;
-}
-
-li.disk-2 {
-  width: 120px;
-}
-
-li.disk-3 {
-  width: 180px;
-}
-
-.game-over ul {
-  cursor: default;
-  border-color: black;
-}
-
-.game-over li {
   background: green;
+  border: 10px yellow solid;
+  margin: auto;
 }
 
+.hanoi > ul > li {
+  /*width: 100px;*/
+  height: 50px;
+  /*background: green;*/
+}
+
+.stone {
+  margin: 10px auto 0 auto;
+  border-radius: 25px;
+  background-color: gray;
+  display: block;
+  color: gray;
+}
+
+.stone1 {
+  width: 100px;
+  background: gray;
+}
+
+.stone2 {
+  width: 200px;
+}
+
+.stone3 {
+  width: 300px;
+}
